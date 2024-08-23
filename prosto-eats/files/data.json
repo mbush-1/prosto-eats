@@ -1,0 +1,21 @@
+{
+    "recipes": 
+    [
+        {
+            "name": "Pelmeni",
+            "time-to-cook": 20,
+            "image-source": "images/pelmeni-cover.jpg"
+        },
+
+        {
+            "name": "---",
+            "time-to-cook": 15
+        },
+        
+        {
+            "name": "---",
+            "time-to-cook": 15
+        }
+    ]
+
+}

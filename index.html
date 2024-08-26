@@ -37,6 +37,7 @@
                 <img class="w-100 img-fluid" src="prosto-eats/images/logo.svg">
             </a>
 
+            <!-- ! hanging anchor tag -->
             <a href="#" class="d-md-flex d-none align-items-center">
                 <img class="w-25 img-fluid" src="prosto-eats/images/logo.svg">
             </a>
@@ -82,10 +83,39 @@
         </div>
     </nav>
 
-    <!-- || [SECTION] || -->
+    <!-- || TITLE & DESCRIPTION || -->
+    <section class="text-center p-5">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md text-sm-center text-md-start"> <!-- Changed to text-start for left alignment -->
+                    <h1 class="page-title ">Welcome To ProstoEats!</h1>
+                    <p class="lead page-lead">A service for your stomach. Simple as that.</p>
+                    <p class="page-body-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi quod
+                        rerum quaerat quas, accusantium eius in? Nihil amet at expedita accusamus corrupti, sed
+                        mollitia, veritatis voluptatem iste sint quae nam?</p>
+                </div>
+                <div class="col-md d-flex justify-content-center">
+                    <img class="img-fluid d-none d-md-flex" style="width: 40%;" src="prosto-eats/images/favicon.png"
+                        alt="ProstoEats Logo">
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- || FEATURED RECIPES || -->
+    <section class="p-5 bg-light">
+        <div class="container">
+            <div>
+                <div class="text-center">
+                    <h1 class="page-title">FEATURED RECIPES</h1>
+                </div>
+                <div class="row">
 
-    <!-- || [SECTION] || -->
+                </div>
+            </div>
+
+        </div>
+    </section>
 
 
     <!-- || [SECTION] || -->
@@ -98,18 +128,32 @@
     <div class="modal" id="newsletter-signup">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
+
+                <div class="modal-header">
+                    <h1 class="modal-title-text p-0 m-0">The Official ProstoEats Newsletter!</h1>
+                </div>
                 <div class="modal-body">
-
-                    <!-- INPUT -->
-                        
-
-                    <!-- TITLE -->
-                    <h1 class="modal-title-text">The Official ProstoEats Newsletter!</h1>
 
                     <!-- TEXT -->
                     <p class="modal-body-text">Hey! Get our flavor-packed recipe newsletter and make every meal a
                         delight. Discover new recipes, cooking tips, and exclusive content that will inspire your
                         kitchen adventures. Join us and elevate your culinary game!</p>
+
+
+                    <!-- TITLE -->
+                    
+                    <form>
+                        <div class="mb-3">
+                            <label for="full-name" class="col-form-label">
+                                Full Name:
+                            </label>
+                            <input type="text" class="form-control" id="full-name" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="col-form-label">Email:</label>
+                            <input type="email" class="form-control" id="email" />
+                        </div>
+                    </form>
 
                 </div>
                 <div class="modal-footer">

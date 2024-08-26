@@ -1,0 +1,4 @@
+
+[NAVBAR] Logo anchor tag:
+The anchor tag which holds the logo seems to extend beyond the displayed (calculated) size of the image itself.
+

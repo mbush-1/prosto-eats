@@ -35,6 +35,25 @@
   font-weight: 300;
 }
 
+.page-title {
+  font-family: Kanit;
+}
+
+.page-lead {
+  font-family: Kanit;
+  letter-spacing: 0.1em;
+}
+
+.page-body-text {
+  font-family: Kanit;
+  font-weight: 200;
+}
+
+body::before {
+  display: block;
+  content: ' ';
+  height: 110px;
+}
 /* CUSTOM MODIFICATIONS */
 
 @import url("https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&display=swap");

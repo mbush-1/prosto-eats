@@ -88,15 +88,20 @@
         <div class="container">
             <div class="row justify-content-center align-items-center">
                 <div class="col-md text-sm-center text-md-start"> <!-- Changed to text-start for left alignment -->
-                    <h1 class="page-title ">Welcome To ProstoEats!</h1>
-                    <p class="lead page-lead">A service for your stomach. Simple as that.</p>
-                    <p class="page-body-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi quod
+                    <h1 class="page-title">Welcome To ProstoEats!</h1>
+                    <div class="col-md d-flex justify-content-center">
+                        <img class="img-fluid d-flex d-md-none rounded-3 mt-4 mb-4" style="width: 100%;"
+                            src="prosto-eats/images/pelmeni-cover.jpg">
+                    </div>
+                    <p class="page-lead fs-4 fs-sm-5">A service for your stomach. Simple as that.</p>
+                    <p class="page-body-text" style="text-align: justify; text-justify: inter-word;">Lorem ipsum dolor,
+                        sit amet consectetur adipisicing elit. Commodi quod
                         rerum quaerat quas, accusantium eius in? Nihil amet at expedita accusamus corrupti, sed
                         mollitia, veritatis voluptatem iste sint quae nam?</p>
                 </div>
                 <div class="col-md d-flex justify-content-center">
-                    <img class="img-fluid d-none d-md-flex" style="width: 40%;" src="prosto-eats/images/favicon.png"
-                        alt="ProstoEats Logo">
+                    <img class="img-fluid d-none d-md-flex rounded-3" style="width: 90%;"
+                        src="prosto-eats/images/pelmeni-cover.jpg">
                 </div>
             </div>
         </div>
@@ -110,10 +115,29 @@
                     <h1 class="page-title">FEATURED RECIPES</h1>
                 </div>
                 <div class="row">
-
+                    <!-- IMPORT THINGS HERE -->
                 </div>
             </div>
 
+        </div>
+    </section>
+
+    <section class="p-5">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md d-flex justify-content-center">
+                    <img class="img-fluid d-none d-md-flex rounded-3" style="width: 90%;"
+                        src="prosto-eats/images/pelmeni-cover.jpg">
+                </div>
+                <div class="col-md text-sm-center text-md-start"> <!-- Changed to text-start for left alignment -->
+                    <h1 class="page-title ">Welcome To ProstoEats!</h1>
+                    <p class="page-lead fs-4 fs-sm-5">A service for your stomach. Simple as that.</p>
+                    <p class="page-body-text" style="text-align: justify; text-justify: inter-word;">Lorem ipsum dolor,
+                        sit amet consectetur adipisicing elit. Commodi quod
+                        rerum quaerat quas, accusantium eius in? Nihil amet at expedita accusamus corrupti, sed
+                        mollitia, veritatis voluptatem iste sint quae nam?</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -123,13 +147,15 @@
 
     <!-- | SCRIPTS & EXTRAS | -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="prosto-eats/files/newsletter-info-transmitter.js"></script>
 
-    <!-- || SUBSCRIPTION MODAL || -->
+    <!-- SUBSCRIPTION MODAL -->
     <div class="modal" id="newsletter-signup">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
 
                 <div class="modal-header">
+                    <!-- TITLE -->
                     <h1 class="modal-title-text p-0 m-0">The Official ProstoEats Newsletter!</h1>
                 </div>
                 <div class="modal-body">
@@ -139,26 +165,23 @@
                         delight. Discover new recipes, cooking tips, and exclusive content that will inspire your
                         kitchen adventures. Join us and elevate your culinary game!</p>
 
-
-                    <!-- TITLE -->
-                    
-                    <form>
+                    <p class="text-danger">NOT CURRENTLY WORKING</p>
+                    <!-- FORM -->
+                    <form id="newsletter-form">
                         <div class="mb-3">
-                            <label for="full-name" class="col-form-label">
-                                Full Name:
-                            </label>
-                            <input type="text" class="form-control" id="full-name" />
+                            <label for="full-name" class="col-form-label">Full Name:</label>
+                            <input type="text" class="form-control" id="full-name" name="full-name" required />
                         </div>
                         <div class="mb-3">
                             <label for="email" class="col-form-label">Email:</label>
-                            <input type="email" class="form-control" id="email" />
+                            <input type="email" class="form-control" id="email" name="email" required />
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary">SIGN UP</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">DISMISS</button>
                         </div>
                     </form>
 
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary">SIGN UP</button>
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">DISMISS</button>
                 </div>
             </div>
         </div>

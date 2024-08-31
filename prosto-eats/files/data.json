@@ -1,25 +1,26 @@
 {
-    "featured-recipes":
-    {
-
-    },
-    
     "recipes": 
     [
         {
             "name": "Pelmeni",
-            "time-to-cook": 20,
-            "image-source": "images/pelmeni-cover.jpg"
+            "origin": "Eastern European",
+            "time-to-cook": 15,
+            "image-source": "prosto-eats/images/pelmeni-cover.jpg"
         },
 
         {
-            "name": "---",
-            "time-to-cook": 15
+            "name": "Burger & Fries",
+            "origin": "United States",
+            "time-to-cook": 20,
+            "image-source": "prosto-eats/images/burger-cover.jpg"
         },
         
         {
-            "name": "---",
-            "time-to-cook": 15
+            "name": "Garlic Pasta & Cooked Chicken",
+            "origin": "Southern Europe",
+            "time-to-cook": 25,
+            "image-source": "prosto-eats/images/pelmeni-cover.jpg"
+
         }
     ]
 

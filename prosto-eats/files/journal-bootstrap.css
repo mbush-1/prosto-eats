@@ -55,7 +55,9 @@ body::before {
   height: 110px;
 }
 
-
+.recipe-thumbnail {
+  /* FINISH THIS HERE */
+}
 
 .small-screen-margin {
   margin-bottom: 1.5em;
@@ -71,6 +73,8 @@ body::before {
   body::before {
     height: 60px
   }
+
+  .featured-recipes {}
 }
 
 /* CUSTOM MODIFICATIONS */

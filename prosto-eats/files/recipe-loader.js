@@ -1,14 +1,14 @@
+// TODO Add go to button, stars / reviews?
+// TODO add proper descriptions
+
+
 fetch("prosto-eats/files/data.json")
     .then(response => response.json())
     .then(data => {
         const recipes = data.recipes
         const renderLocation = '.featured-recipes'
-        renderAllRecipes(recipes, renderLocation)
+        renderFeaturedRecipes(recipes, renderLocation)
     })
-
-function printData(data) {
-    console.log(data)
-}
 
 function renderAllRecipes(recipes, location) {
     recipes.forEach(recipe => {
@@ -24,6 +24,7 @@ function renderRecipe(recipe, location) {
     // Render the structure
     const containerBox = document.createElement('div');
     containerBox.className = 'col-md-4 mb-3';
+    // containerBox.style.cursor = 'pointer';
 
     const cardBox = document.createElement('div');
     cardBox.className = 'card';
@@ -61,15 +62,21 @@ function renderRecipe(recipe, location) {
     devLocation.appendChild(containerBox);
 }
 
-function renderFeaturedRecipes(recipes) {
+function renderFeaturedRecipes(recipes, location) {
     numRecipes = recipes.length
-    console.log(numRecipes)
 
     // get the featured numbers
 
-    featuredIndexes = []
-    while (featuredIndexes.length <= 3) {
-
+    const featuredIndexes = []
+    while (featuredIndexes.length < 3) {
+        const randomNumber = Math.floor(Math.random() * numRecipes);
+        if (!featuredIndexes.includes(randomNumber)) {
+            featuredIndexes.push(randomNumber)
+        }
     }
 
+    // display featured (selected) recipes
+    featuredIndexes.forEach(featuredIndex => {
+        renderRecipe(recipes[featuredIndex], location)
+    })
 }

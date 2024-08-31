@@ -5,23 +5,30 @@
             "name": "Pelmeni",
             "origin": "Eastern European",
             "time-to-cook": 15,
-            "image-source": "prosto-eats/images/pelmeni-cover.jpg"
+            "image-source": "prosto-eats/images/pelmeni.jpg"
         },
 
         {
             "name": "Burger & Fries",
             "origin": "United States",
             "time-to-cook": 20,
-            "image-source": "prosto-eats/images/burger-cover.jpg"
+            "image-source": "prosto-eats/images/burger-fries.jpg"
         },
         
         {
-            "name": "Garlic Pasta & Cooked Chicken",
-            "origin": "Southern Europe",
+            "name": "Chicken Fettuccine",
+            "origin": "Southern European",
             "time-to-cook": 25,
-            "image-source": "prosto-eats/images/pelmeni-cover.jpg"
+            "image-source": "prosto-eats/images/chicken-fettuccine.jpg"
+        },
 
+        {
+            "name": "Beef Poutine",
+            "origin": "Canadian",
+            "time-to-cook": 20,
+            "image-source": "prosto-eats/images/beef-poutine.jpg"
         }
+
     ]
 
 }

@@ -13,7 +13,7 @@
  */
 
 
-/* CUSTOM MODIFICATIONS */
+/* CUSTOM MODIFICATIONS START HERE */
 
 .navigation-item-text {
   font-family: Kanit;
@@ -56,18 +56,34 @@ body::before {
 }
 
 .recipe-thumbnail {
-  /* FINISH THIS HERE */
+  /* technically not necassary if each image is cropped to 9:16 ratio */
 }
+
+.contact-heading {
+  font-family: Kanit;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.icon-image {
+  height: 1.5rem; 
+  width: auto; 
+  vertical-align: middle; 
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
 
 .small-screen-margin {
   margin-bottom: 1.5em;
-  /* Default margin for larger screens */
 }
 
 @media (max-width: 768px) {
   .small-screen-margin {
     margin-bottom: 1.8em;
-    /* Adjust the value as needed */
   }
 
   body::before {
@@ -77,7 +93,7 @@ body::before {
   .featured-recipes {}
 }
 
-/* CUSTOM MODIFICATIONS */
+/* CUSTOM MODIFICATIONS END HERE */
 
 @import url("https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&display=swap");
 

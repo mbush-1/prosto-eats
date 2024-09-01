@@ -1,13 +1,39 @@
 // TODO Add go to button, stars / reviews?
 // TODO add proper descriptions
 
+console.log('I started!')
 
-fetch("prosto-eats/files/data.json")
+if (window.location.pathname.includes('all-recipes.html')) {
+    // If on the recipes page, render all recipes
+    renderLocation = '.all-recipes'; // Ensure this matches the class in your recipes.html
+    relativeDataLocation = 'files/data.json'
+    relativeImagePath = 'images/recipe-thumbnails/'
+    
+    console.log('in all recipes right now!')
+} else {
+    // If on the home page, render featured recipes
+    renderLocation = '.featured-recipes';
+    relativeDataLocation = 'prosto-eats/files/data.json'
+    relativeImagePath = 'prosto-eats/images/recipe-thumbnails/'
+    // console.log('in featured recipes right now!')
+}
+
+
+// [FETCH] Get access to actual JSON file.
+fetch(relativeDataLocation)
     .then(response => response.json())
     .then(data => {
+
+        // [RECIPES] Initialize the actual recipe list.
         const recipes = data.recipes
-        const renderLocation = '.featured-recipes'
-        renderFeaturedRecipes(recipes, renderLocation)
+
+        // [LOCATION] Determine where this file is actually going to load.
+        if (renderLocation.includes('.featured-recipes')) {
+            renderFeaturedRecipes(recipes, renderLocation)
+        }
+        else if (renderLocation.includes('.all-recipes')) {
+            renderAllRecipes(recipes, renderLocation)
+        }
     })
 
 function renderAllRecipes(recipes, location) {
@@ -32,7 +58,7 @@ function renderRecipe(recipe, location) {
 
     // image
     const recipeThumbnail = document.createElement('img');
-    recipeThumbnail.setAttribute('src', recipe['image-source']);
+    recipeThumbnail.setAttribute('src', (relativeImagePath + recipe['image-source']));
     recipeThumbnail.className = 'image-fluid w-100 recipe-thumbnail';
     cardBox.appendChild(recipeThumbnail);
 

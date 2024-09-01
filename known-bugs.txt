@@ -2,3 +2,7 @@
 [NAVBAR] Logo anchor tag:
 The anchor tag which holds the logo seems to extend beyond the displayed (calculated) size of the image itself.
 
+
+things that can be done better:
+ - in multiple page interfaces, use a script to load the headers (and footers).
+ - recipe loader structure that adapts to each file can be tweaked for less checks.

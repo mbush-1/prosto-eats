@@ -49,8 +49,13 @@ function renderRecipe(recipe, location) {
 
     // Render the structure
     const containerBox = document.createElement('div')
-    containerBox.className = 'col-md-4 mb-3'
-    // containerBox.style.cursor = 'pointer'
+    if (renderLocation.includes('.all-recipes')) {
+        containerBox.className = 'col-md-3 mb-3 recipe-structure'
+    }
+    else if (renderLocation.includes('.featured-recipes')) {
+        containerBox.className = 'col-md-3 mb-3 recipe-structure'    
+    }
+    containerBox.style.padding = '0'
 
     const cardBox = document.createElement('div')
     cardBox.className = 'card'

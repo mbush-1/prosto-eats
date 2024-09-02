@@ -59,6 +59,17 @@ body::before {
   /* technically not necassary if each image is cropped to 9:16 ratio */
 }
 
+.recipe-structure {
+  transition: all 0.15s;  
+}
+
+.recipe-structure:hover {
+  box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.5);
+  transform: scale(1.05);
+  cursor: pointer;
+  filter: brightness(0.8);
+}
+
 .contact-heading {
   font-family: Kanit;
   font-weight: 500;

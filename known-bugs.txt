@@ -1,6 +1,6 @@
 
 [NAVBAR] Logo anchor tag:
-The anchor tag which holds the logo seems to extend beyond the displayed (calculated) size of the image itself.
+ - The anchor tag which holds the logo extends beyond the displayed (calculated) size of the image itself (seemingly because the anchor size corresponds with the initial image size rather than the new percent one).
 
 
 things that can be done better:

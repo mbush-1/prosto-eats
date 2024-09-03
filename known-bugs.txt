@@ -6,3 +6,4 @@
 things that can be done better:
  - in multiple page interfaces, use a script to load the headers (and footers).
  - recipe loader structure that adapts to each file can be tweaked for less checks.
+ - in mobile resolution: all recipes has a page-system that loads a certain amount of recipes per page.

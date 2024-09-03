@@ -62,15 +62,7 @@
             "origin": "Abstract",
             "time-to-cook": 0,
             "image-source": "not-available.jpg"
-        },
-
-        {
-            "name": "Some Food",
-            "origin": "Abstract",
-            "time-to-cook": 0,
-            "image-source": "not-available.jpg"
         }
-
     ]
 
 }
